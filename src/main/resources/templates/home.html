@@ -10,7 +10,9 @@
 <body>
 <div th:replace="fragments/header :: header"></div>
 
-<div class="container">
+<div class="container-fluid">
+    <h1>Hello</h1>
+    <p>This is home page</p>
     <div class="row" th:each="product : ${products}">
         <div class="col-md-4">
             <h2 th:text="${product.title}"></h2>
